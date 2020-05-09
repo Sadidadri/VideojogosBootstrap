@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Videojogos</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row py-3 align-items-center">
+                <div class="col-12 col-lg-3 text-center">
+                    <h1><a href="#" class="text-dark website-title">Videojogos</a></h1>
+                </div>
+                <div class="col col-12 col-lg-9 ">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Inicio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Playstation 4</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">XBOX ONE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Nintendo Switch</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="main">
+        <div class="container">
+            <section class="row main-carousel">
+                <div class="col">
+
+                    <div id="carouselJuegos" class="carousel slide" data-ride="carousel" data-interval="3500">
+
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselJuegos" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselJuegos" data-slide-to="1"></li>
+                            <li data-target="#carouselJuegos" data-slide-to="2"></li>
+                        </ol>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/vj-carousel-1.jpg" class="d-block w-100" alt="Red Dead Redemption II">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Red Dead Redemption II</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/vj-carousel-2.jpg" class="d-block w-100" alt="Cyberpunk 2077">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Cyberpunk 2077</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/vj-carousel-3.jpg" class="d-block w-100" alt="Animal Crossing">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Animal Crossing New Horizon</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#carouselJuegos" class="carousel-control-prev" data-slide="prev"><span
+                                class="carousel-control-prev-icon"></span><span class="sr-only">Anterior</span></a>
+                        <a href="#carouselJuegos" class="carousel-control-next" data-slide="next"><span
+                                class="carousel-control-next-icon"></span><span class="sr-only">Siguiente</span></a>
+                    </div>
+
+                </div>
+            </section>
+            <section class="row products-masonry-container ">
+                <div class="col">
+                    <div class="products-masonry-filter mt-4 mt-lg-5 mb-4 border-top border-bottom py-3">
+                        <ul class="nav nav-pills nav-fill">
+                            <li class="nav-item">
+                                <a href="#todos" class="nav-link active" data-toggle="tab">Todos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#PS4" class="nav-link" data-toggle="tab">PS4</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#XBOX" class="nav-link" data-toggle="tab">Xbox One</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#SWITCH" class="nav-link" data-toggle="tab">Nintendo Switch</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="products-masonry">
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="todos">
+                                <div class="card-columns">
+                                    <div class="card">
+                                        <img src="img/caratulas/ps4_dbxenoverse.jpg" alt="" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Dragon Ball Xenoverse</h5>
+                                            <p class="card-text">30€</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="img/caratulas/switch_octopathtraveler.jpg" alt=""
+                                            class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Octopath Traveler</h5>
+                                            <p class="card-text">30€</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="img/caratulas/xbox_SeaOfThieves.jpg" alt="" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Sea Of Thieves</h5>
+                                            <p class="card-text">20€</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="img/caratulas/ps4_redDead2.jpg" alt="" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Red Dead Redemption II</h5>
+                                            <p class="card-text">30€</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="img/caratulas/switch_zeldabotw.jpg" alt="" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Zelda Breath of the Wild</h5>
+                                            <p class="card-text">50€</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="img/caratulas/xbox_forza7.jpg" alt="" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Forza 7 Motorsport Edition</h5>
+                                            <p class="card-text">40€</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="PS4">
+                                <div class="card-columns">
+                                    <div class="card">
+                                        <img src="img/caratulas/ps4_dbxenoverse.jpg" alt="" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Dragon Ball Xenoverse</h5>
+                                            <p class="card-text">30€</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="img/caratulas/ps4_uncharted4.jpg" alt="" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Uncharted 4</h5>
+                                            <p class="card-text">10€</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="img/caratulas/ps4_codmw.jpg" alt="" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Call of Duty Modern Warfare</h5>
+                                            <p class="card-text">40€</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="img/caratulas/ps4_redDead2.jpg" alt="" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Red Dead Redemption II</h5>
+                                            <p class="card-text">30€</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="img/caratulas/ps4_spyrotrilogy.jpg" alt="" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Spyro Trilogy</h5>
+                                            <p class="card-text">15€</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="img/caratulas/ps4_crashtrilogy.jpg" alt="" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Crash Bandicoot N-Sane Trilogy</h5>
+                                            <p class="card-text">30€</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="XBOX">
+                                <div class="card-columns">
+                                    <div class="card">
+                                        <img src="img/caratulas/xbox_BattlefieldV.jpg" alt="" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Battlefield V</h5>
+                                            <p class="card-text">30€</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="img/caratulas/xbox_forza7.jpg" alt="" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Forza 7 Motorsport</h5>
+                                            <p class="card-text">40€</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="img/caratulas/xbox_gow4.jpg" alt="" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Gears of Wars 4</h5>
+                                            <p class="card-text">15€</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="img/caratulas/xbox_haloMasterChiefCollection.jpg" alt=""
+                                            class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Halo Master Chief Collection</h5>
+                                            <p class="card-text">30€</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="img/caratulas/xbox_RareReplay.jpg" alt="" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Rare Replay</h5>
+                                            <p class="card-text">10€</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="img/caratulas/xbox_SeaOfThieves.jpg" alt="" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Sea of Thieves</h5>
+                                            <p class="card-text">20€</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="SWITCH">
+                                <div class="card-columns">
+                                    <div class="card">
+                                        <img src="img/caratulas/switch_mariokart8.jpg" alt="" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Mario Kart 8 Deluxe</h5>
+                                            <p class="card-text">30€</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="img/caratulas/switch_marioodysey.jpg" alt="" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Super Mario Odyssey</h5>
+                                            <p class="card-text">40€</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="img/caratulas/switch_marioparty.jpg" alt="" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Super Mario Party</h5>
+                                            <p class="card-text">25€</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="img/caratulas/switch_octopathtraveler.jpg" alt=""
+                                            class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Octopath Traveler</h5>
+                                            <p class="card-text">30€</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="img/caratulas/switch_yookalaylee.jpg" alt="" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Yooka Layle</h5>
+                                            <p class="card-text">15€</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <img src="img/caratulas/switch_zeldabotw.jpg" alt="" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Zelda breath of the Wild</h5>
+                                            <p class="card-text">50€</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="call-to-action-container text-center border-bottom border-top mb-5 py-5">
+                            <p>Encuentra el videojuego que desees</p>
+                            <a href="#" class="btn btn-outline-primary">Visitar tienda</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="row latest-news">
+                <div class="col-lg mb-3 mv-lg-0">
+                    <div class="featured-post h-100">
+                        <div id="featuredPostCarousel" class="carousel slide h-100" data-interval="false">
+                            <div class="carousel-inner h-100">
+                                <div class="carousel-item active h-100">
+                                    <div class="featured-post-inner h-100 d-flex align-items-end featured-post-1">
+                                        <div class="featured-post-info w-100">
+                                            <h4>¿Banjo Kazooie remake para Nintendo Switch?</h4>
+                                            <p>Es el rumor que lleva corriendo durante los últimos meses desde que ambos personajes fueron incluidos
+                                                en la saga Super Smash Bros.</p>
+                                            <p class="post-meta d-flex justify-content-between">
+                                                <span>Aitor Tilla</span>
+                                                <span>06/05/2020</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item h-100">
+                                    <div class="featured-post-inner h-100 d-flex align-items-end featured-post-2">
+                                        <div class="featured-post-info w-100">
+                                            <h4>Llega Assasin's Creed Valhalla</h4>
+                                            <p>La cosa va de vikingos. Recibimos fecha de estreno del nuevo Assasin's Creed ¿Llegará a mantener la esencia de la saga?</p>
+                                            <p class="post-meta d-flex justify-content-between">
+                                                <span>Aitor Tilla</span>
+                                                <span>07/05/2020</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#featuredPostCarousel" class="carousel-control-prev" data-slide="prev"><span
+                                    class="carousel-control-prev-icon"></span><span class="sr-only">Anterior</span></a>
+                            <a href="#featuredPostCarousel" class="carousel-control-next" data-slide="next"><span
+                                    class="carousel-control-next-icon"></span><span class="sr-only">Siguiente</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg d-none d-sm-block">
+                    <div class="row post mb-3">
+                        <div class="col-sm-4">
+                            <img class="img-fluid" src="img/posts/terrorLuigiMansion.jpg" alt="">
+                        </div>
+                        <div class="col-sm-8">
+                            <h4>El terror en Luigi's Mansion</h4>
+                            <p>Os presentamos el lado oscuro de Nintendo</p>
+                            <p class="post-meta d-flex justify-content-between">
+                                <span>Aitor Tilla</span>
+                                <span>07/05/2020</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row post mb-3">
+                        <div class="col-sm-4">
+                            <img class="img-fluid" src="img/posts/zeldaOcarinaOfTimeUnreal.webp" alt="">
+                        </div>
+                        <div class="col-sm-8">
+                            <h4>Probamos Ocarina Of Time en Unreal Engine</h4>
+                            <p>El proyecto llevado a cabo por un fan que nos dejó boquiabiertos a más de uno.</p>
+                            <p class="post-meta d-flex justify-content-between">
+                                <span>Aitor Peza</span>
+                                <span>04/05/2020</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row post">
+                        <div class="col-sm-4">
+                            <img class="img-fluid" src="img/posts/unchartedTomHolland.jpg" alt="">
+                        </div>
+                        <div class="col-sm-8">
+                            <h4>Tom Holland como Nathan Drake</h4>
+                            <p>El célebre actor tomará el papel del protagonista de la saga Uncharted</p>
+                            <p class="post-meta d-flex justify-content-between">
+                                <span>Aitor Menta</span>
+                                <span>06/05/2020</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="section contact bg-dark mt-5">
+            <div class="container">
+                <div class="row py-5 justify-content-center align-items-center">
+                    <div class="col col-auto mb-4 mb-md-0">   
+                        <p class="text-white mb-0">Esta página ha sido desarrollada por Adrián Ángel Moya Moruno</p>
+                    </div>
+                    <div class="col col-auto">
+                        <a class="btn btn-primary" href="#">Contactar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-primary">
+        <div class="container">
+            <div class="row justify-content-md-between align-items-center py-3">
+                <div class="col-md-4 text-center text-md-left order-md-0 order-1 my-4 my-md-0">
+                    <p class="text-white mb-0"><small>&copy; Todos los derechos reservados</small></p>
+                </div>
+                <div class="col-md-4">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-center text-md-right order-2 order-md-0">
+                    <a class="text-white mr-1" href="https://www.linkedin.com/in/adri%C3%A1n-%C3%A1ngel-moya-moruno-bb191617a/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a class="text-white mr-1" href="#">
+                        <i class="fab fa-twitter-square"></i></i>
+                    </a>
+                    <a class="text-white mr-1" href="#">
+                        <i class="fab fa-github-square"></i></i>
+                    </a>
+                    <a href="#" class="text-white">
+                        <i class="fab fa-youtube-square"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
